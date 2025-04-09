@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje para Yami</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #007BFF; /* Color de fondo azul */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white; /* Color del texto en blanco para contraste */
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            text-align: center;
+            color: #333; /* Color del texto dentro del contenedor */
+        }
+        h1 {
+            color: #007BFF; /* Color del encabezado */
+        }
+        p {
+            color: #555; /* Color del texto */
+            line-height: 1.6;
+        }
+        .question {
+            font-size: 20px; /* Tamaño de fuente más grande para la pregunta */
+            font-weight: bold; /* Negrita para destacar la pregunta */
+            margin: 20px 0; /* Espaciado alrededor de la pregunta */
+        }
+        .footer {
+            margin-top: 20px;
+            font-style: italic;
+            color: #777;
+        }
+        audio {
+            margin-top: 20px;
+            width: 100%; /* Hacer que el reproductor de audio ocupe el ancho completo */
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        button {
+            background-color: #28a745; /* Color verde para el botón "Sí" */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 16px;
+        }
+        button.no {
+            background-color: #dc3545; /* Color rojo para el botón "No" */
+        }
+        button:hover {
+            opacity: 0.8; /* Efecto de hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <audio controls>
+        <source src="Alleh & Yorghaki - el ingeniero (visualizer).mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <h1>Yami,</h1>
+    <p>
+        Sé que la arruiné. Sé que no soy la mejor opción, y tú ya me conoces bien… con mis errores, mis defectos, mis momentos de torpeza. Pero aun con todo eso, quiero que sepas algo sincero: este desastre que soy te quiere como nunca ha querido a nadie.
+    </p>
+    <p>
+        Sé que pedir perdón se ha vuelto lo único que te repito, pero aún así, perdón. Perdón por el daño, por las veces que fallé, por no haber cuidado lo que teníamos como debía.
+    </p>
+    <p>
+        Aun así, quiero intentarlo una vez más. No por costumbre, sino porque de verdad creo que esta vez puede ser diferente. Porque quiero que seas tú. Solo tú.
+    </p>
+    
+  
+    <div class="footer">
+        <p>Con cariño,</p>
+        <p>[Tu Nombre]</p>
+    </div>
+   
+    <div class="question">
+        ¿Me darías el honor de volver de 0? Y volvamos a hacer todo… no puedo vivir ya estar así contigo.
+    </div>
+
+    <div class="button-container">
+        <button onclick="respuesta('Sí')">Sí</button>
+        <button class="no" onclick="respuesta('No')">No</button>
+    </div>
+</div>
+
+<script>
+    function respuesta(opcion) {
+        if (opcion === 'Sí') {
+            window.location.href = 'si.html'; // Redirige a nueva_pagina.html
+        } else {
+            window.location.href = 'no.html'; // Redirige a pagina_no.html
+        }
+    }
+</script>
+
+</body>
+</html>
